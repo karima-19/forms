@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .c{
+         display: inline-block;
+        width:290px;
+       }
+#Application option:hover {
+    background-color: navy;
+    color: white;
+}
+#Application option:checked {
+    background-color: navy; /* darker blue when selected */
+    color: white;
+}
+    </style>
+</head>
+<body style="border: 3px solid black; margin:85px auto; width: 35%; padding: 0px;">
+    <fieldset style="margin: 10px auto; margin-bottom: 0; padding: 5px;width: 90%;">
+        <legend style="text-align: left; background-color: yellow;">client</legend>
+        <form action="destination.php" method="post">
+            <div>
+                <label for="Civilité"  style="display: inline-block;width: 150px;">Civilité</label>
+                <input type="radio" name="Civilité" id="Mademoiselle"/>Mademoiselle&nbsp;&nbsp;<input type="radio" name="Civilité" id="Madame"/>Madame&nbsp;&nbsp;<input type="radio" name="Civilité" id="Monsieur"/>Monsieur
+            </div>
+            <div>
+                <label for="Nom/Prenom" style="display: inline-block;width: 150px;">Nom/Prenom</label>
+                <input name="Nom/Prenom" class="c" id="Nom/Prenom" placeholder="Saisir votre nom et prénom..">
+            </div>
+            <div>
+                <label for="Adresse" style="display: inline-block;width: 150px;">Adresse</label>
+                <textarea name="Adresse" class="c" id="Adresse" placeholder="Rue No Boite postal"></textarea>
+            </div>
+            <div>
+                <label for="No postal/" style="display: inline-block;width: 150px;">No postal/</label>
+                <input name="No postal/" class="c" id="No postal/" placeholder="Saisir votre code postal..">
+            </div>
+            <div>
+                <label for="Localité" style="display: inline-block;width: 150px;">Localité</label>
+                <input name="Localité" class="c" id="Localité" placeholder="Saisir votre Localité..">
+            </div>
+            <div>
+                <label for="Pays" style="display: inline-block;width: 150px;">Pays</label>
+                <select name="Pays" class="c" id="Pays">
+                <option value="Morocco">Morocco</option>
+                <option value="Germany">Germany</option>
+                <option value="China">China</option>
+                <option value="America">America</option>
+                <option value="Russia">Russia</option>
+                <option value="Spain">Spain</option>
+                <option value="Italy">Italy</option>
+                </select>
+            </div>
+            <div>
+                <label for="Platefirme(s)" style="display: inline-block;width: 150px;">Platefirme(s)</label>
+                <input type="checkbox">&nbsp;Windows<input type="checkbox">&nbsp;Macintoch <input type="checkbox">&nbsp;Unix
+            </div>
+            <div>
+                <label for="Application" style="display: inline-block;width: 150px;">Application</label>
+                <!--<input list="Application" type="text" placeholder="Choisir votre Application...">
+                <datalist id="Application">
+                    <option value="Bureautique">Bureautique</option>
+                    <option value="SGBD">SGBD</option>
+                    <option value="DAO">DAO</option>
+                    <option value="Internet">Internet</option>
+                    <option value="Statistiques">Statistiques</option>
+                </datalist>-->
+                <select multiple name="Application" class="c" id="Application">
+                    <option value="Bureautique">Bureautique</option>
+                    <option value="SGBD">SGBD</option>
+                    <option value="DAO">DAO</option>
+                    <option value="Internet">Internet</option>
+                    <option value="Statistiques">Statistiques</option>
+                </select>
+            </div>
+    </fieldset>
+            <div style="padding: 10px; text-align: center;">
+                <button type="submit">Soumettre formulaire</button>
+                <button type="reset">Efacer</button>
+            </div>
+        </form>
+</body>
+</html>

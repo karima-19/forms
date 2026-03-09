@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset style="margin: 10px auto; padding: 5px;width: 35%;">
+        <legend>Contact</legend>
+        <form action="">
+            <label for="nom" style="display: inline-block;width: 150px;">nom: </label>
+            <input type="text" id="nom"><br><br>
+            <label for="prenom" style="display: inline-block;width: 150px;">prenom: </label>
+            <input type="text" id="nom"><br><br>
+            <label for="age" style="display: inline-block;width: 150px;">Age: </label>
+            <input type="number" id="age" min="16" max="65"><br><br>
+            <label for="email" style="display: inline-block;width: 150px;">email: </label>
+            <input type="email" id="email"><br><br>
+            <label for="tele" style="display: inline-block;width: 150px;">Téléphone: </label>
+            <input type="tel" id="tele"><br><br>
+            <label for="clr" style="display: inline-block;width: 150px;">coleure: </label>
+            <input type="color" id="clr"><br><br>
+            <label for="date" style="display: inline-block;width: 150px;">Date de naissance: </label>
+            <input type="date" id="date" min="1950-01-01" max="2010-01-01"><br><br>
+            <label for="persoIMG" style="display: inline-block;width: 150px;">Profile photo: </label>
+            <input type="file" id="persoIMG"><br><br>
+            <label for="passw" style="display: inline-block;width: 150px;">Mot de pass: </label>
+            <input type="password" id="passw"><br><br>
+            <label for="rad" style="display: inline-block;width: 150px;">Genre: </label>
+            <input type="radio" id="rad" name="rad">Femme
+            <input type="radio" id="rad" name="rad">Male<br><br>
+            <label for="lo" style="display: inline-block;width: 150px;">loisirs: </label>
+            <input type="checkbox" id="spec">surfing
+            <input type="checkbox" id="spec">volley-ball
+            <input type="checkbox" id="spec">painting<br><br>
+            <label for="spec" style="display: inline-block;width: 150px;">Specialité: </label>
+            <select name="spec" id="spec">
+                <option value="IT">IT</option>
+                <option value="Développeur">Développeur</option>
+                <option value="Marketing">Marketing</option>
+            </select>
+        </form>
+    </fieldset>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1 style="text-align: center;">Validation Formulaire aver Bootstrap 5</h1>
+    <div class="container mx-auto">
+    <form action="" >
+        <div class="row"><div class="col"><p>Nom D'utilisateur (3-10 caractères)</p></div></div>
+        <div class="row was-validated"><input type="text" pattern="^[A-Za-z]{3,10}$" required>
+        <div class="valid-feedback">valid</div>
+        <div class="invalid-feedback">invalid</div>
+        </div>
+        <div class="row">Mot de passe (min 6 caractères)</div>
+        <div class="row was-validated"><input type="password" pattern="^{,5}$" required>
+        <div class="valid-feedback">valid</div>
+        <div class="invalid-feedback">invalid</div>
+        </div>
+        <div class="row">Sexe</div>
+        <div class="row"><div class="col-2"><input type="radio" name="gender">&nbsp;Homme</div></div>
+        <div class="row"><div class="col-2"><input type="radio" name="gender">&nbsp;Femme</div></div>
+        <div class="row"><div class="col-2"><input type="checkbox">&nbsp;J'accepts les termes et conditons</div></div>
+        <div class="row">Message</div>
+        <div class="row"><textarea rows="4"></textarea></div>
+        <div class="row">Pays</div>
+        <div class="row"><select name="" id="">
+            <option value="" disabled selected>Seléctionnez un pays</option>
+            <option value="">China</option>
+            <option value="">Russia</option>
+            <option value="">Spain</option>
+            <option value="">Germany</option>
+        </select></div>
+        <div class="row"><div class="col-3"><button>Valider</button></div></div>
+    </form>
+    </div>
+</body>
+</html>
