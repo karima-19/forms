@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            border: 1px solid black;
+            width: 40%;
+            height: 250px;
+            margin: auto;
+        }
+        .on{
+            display: flex;
+            align-items: center;
+        }
+        .c{
+            margin-left: 60px;
+        }
+        .but{
+            margin-left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1 style="text-align: center;">Questionaire de vote</h1>
+        <form>
+            <div>
+                <ol>
+                    <li>Le meilleur Antivirus pour vous est:</li>
+                        <label for="Antivirus"></label>
+                    <div class="c">
+                        <select name="Antivirus" id="Antivirus">
+                            <option value="Avira Free Security">Avira Free Security</option>
+                        </select>
+                    </div>
+                    <li>Votre degré se satisfaction est:</li>
+                        <div class="c">
+                            <span>0%</span>
+                            <label for="satisfaction"></label>
+                            <input type="range" id="satisfaction" name="satisfaction" min="0" max="100">
+                            <span>100%</span>
+                        </div>
+                    <li>avez-vous déjà utilisé un autre antivirus?</li>
+                    <div class="c">
+                        <div class="on">
+                            <input type="radio" id="accorder" name="choix" value="oui">​
+                            <label for="accorder">oui</label>
+                            <input type="radio" id="refuser" name="choix" value="non">​
+                            <label for="refuser">non</label>
+                        </div>
+                    </div>
+                </ol>
+            </div>
+            <div class="but">
+                <button>Envoyer</button>
+                <button>Annuler</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
